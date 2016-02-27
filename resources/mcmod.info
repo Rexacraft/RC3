@@ -1,0 +1,16 @@
+[
+{
+  "modid": "${modid}",
+  "name": "${name}",
+  "description": "",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://rexacraft.net",
+  "updateUrl": "",
+  "authorList": ["DJ Daemonix", "Superloup10", "Kevin68", "Robin4002"],
+  "credits": "Rexacraft 3.0 Dev Team : Entirety of the Mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

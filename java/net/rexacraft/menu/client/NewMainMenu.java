@@ -21,6 +21,7 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiSelectWorld;
 import net.minecraft.client.gui.GuiYesNo;
 import net.minecraft.client.gui.GuiYesNoCallback;
+import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.texture.DynamicTexture;
@@ -44,6 +45,7 @@ import org.lwjgl.util.glu.Project;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 
+import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.GuiModList;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.relauncher.Side;
@@ -271,6 +273,8 @@ public class NewMainMenu extends GuiScreen implements GuiYesNoCallback
 
         if(p_146284_1_.id == 1)
         {
+        	FMLClientHandler.instance().connectToServerAtStartup("rexacraft.net", 25565);
+//        	FMLClientHandler.instance().connectToServer(this, new ServerData("Rexacraft", "rexacraft.net:25565"));
             //TODO connexion au serveur
 //            this.mc.displayGuiScreen(new GuiSelectWorld(this));
         }

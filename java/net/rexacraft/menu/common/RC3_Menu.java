@@ -15,7 +15,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.relauncher.Side;
 
-//@Mod(modid = RC3_Menu.MODID, name = "RC3 Menu", version = "@VERSION@", dependencies = "required-after:" + RC3_Core.MODID + ";")
+@Mod(modid = RC3_Menu.MODID, name = "RC3 Menu", version = "@VERSION@", dependencies = "required-after:" + RC3_Core.MODID + ";")
 public class RC3_Menu extends MCMod
 {
     public static final String MODID = "RC3_Menu";
